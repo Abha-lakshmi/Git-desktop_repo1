@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.37\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY19SU06\",\"version\":\"5.5\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY19SU06",
+            "path": "BaseThemes/CY19SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"e8988779c37ecd4ce480\",\"layouts\":[{\"id\":0,\"position\":{\"x\":39.84813971146546,\"y\":43.73576309794989,\"z\":0,\"width\":489.84054669703875,\"height\":264.35839028094153}}],\"singleVisual\":{\"visualType\":\"waterfallChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Table (2).Measure\"}],\"Category\":[{\"queryRef\":\"Table (2).Attribute\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"UnpivotedTable\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Measure\"},\"Name\":\"Table (2).Measure\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Attribute\"},\"Name\":\"Table (2).Attribute\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 264.36,
+          "width": 489.84,
+          "x": 39.85,
+          "y": 43.74,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

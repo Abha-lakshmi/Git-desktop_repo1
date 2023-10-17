@@ -1,0 +1,284 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.119.870.0 (23.07)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Table\",\"UnpivotedTable\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-GB",
+    "tables": [
+      {
+        "name": "Table",
+        "annotations": [
+          {
+            "name": "PBI_QueryRelationships",
+            "value": "{\"columnCount\":5,\"keyColumnNames\":[],\"queryRelationships\":[],\"columnIdentities\":[\"Section1/Table/Changed Type.{PY Purchase Value,0}\",\"Section1/Table/Changed Type.{Volume Variance,1}\",\"Section1/Table/Changed Type.{Mix Variance,2}\",\"Section1/Table/Changed Type.{Price Variance,3}\",\"Section1/Table/Changed Type.{CY Purchase Value,4}\"],\"ColumnCount\":5,\"KeyColumnNames\":[],\"ColumnIdentities\":[\"Section1/Table/Changed Type.{PY Purchase Value,0}\",\"Section1/Table/Changed Type.{Volume Variance,1}\",\"Section1/Table/Changed Type.{Mix Variance,2}\",\"Section1/Table/Changed Type.{Price Variance,3}\",\"Section1/Table/Changed Type.{CY Purchase Value,4}\"],\"RelationshipInfo\":[]}"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "CY_Purchase_Value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f41f03ba-095f-4eaf-af30-c89bcbab7c94",
+            "sourceColumn": "CY_Purchase_Value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Mix_Variance",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f1103e01-82bc-4fb7-b78b-7c384be0fd8d",
+            "sourceColumn": "Mix_Variance",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "PY_Purchase_Value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1fe6f6b1-aa3d-4c29-9639-f4f2d23cd478",
+            "sourceColumn": "PY_Purchase_Value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Price_Variance",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5337fa89-d44c-41f2-83f6-2029159568c6",
+            "sourceColumn": "Price_Variance",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Volume_Variance",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ddc3025c-9f25-4c67-bf2e-8677f1f7c086",
+            "sourceColumn": "Volume_Variance",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "d3cc31e3-3d1c-4b0c-b096-1a5c78fe4ee5",
+        "measures": [
+          {
+            "name": "PY Purchase Value",
+            "expression": "SUM( 'Table'[PY_Purchase_Value] )",
+            "formatString": "0",
+            "lineageTag": "a664f8da-d911-4f2c-ac5d-8b5e40d3924c"
+          },
+          {
+            "name": "Volume Variance",
+            "expression": "SUM( 'Table'[Volume_Variance] )",
+            "formatString": "0",
+            "lineageTag": "b000e7eb-56fe-45b4-9502-79db2ea2a98a"
+          },
+          {
+            "name": "Mix Variance",
+            "expression": "SUM( 'Table'[Mix_Variance] )",
+            "formatString": "0",
+            "lineageTag": "6a0668f8-9891-4710-9685-78637ff4672c"
+          },
+          {
+            "name": "Price Variance",
+            "expression": "SUM( 'Table'[Price_Variance] )",
+            "formatString": "0",
+            "lineageTag": "20b24df4-dd8d-4b4a-8c39-cdf13fa3874d"
+          },
+          {
+            "name": "CY Purchase Value",
+            "expression": "SUM( 'Table'[CY_Purchase_Value] )",
+            "formatString": "0",
+            "lineageTag": "eb57dd60-e124-402c-89c2-014ca8fe630b"
+          },
+          {
+            "name": "check2",
+            "expression": "CALCULATE(SUM('Table'[Mix_Variance]))",
+            "formatString": "0",
+            "lineageTag": "5b95111f-6f2b-4a10-9ccd-02ba301327dc"
+          },
+          {
+            "name": "new",
+            "expression": "CALCULATE(COUNT('Table'[CY_Purchase_Value]))",
+            "formatString": "0",
+            "lineageTag": "576ab09d-5114-4720-ad01-7c7955788466"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Table-982dca7b-a5a6-4d0f-8f50-38827f660bee",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMjQwUNJRMjIFEsYglq4hiGloYqAUGwsA\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [#\"PY Purchase Value\" = _t, #\"Volume Variance\" = _t, #\"Mix Variance\" = _t, #\"Price Variance\" = _t, #\"CY Purchase Value\" = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"PY Purchase Value\", Int64.Type}, {\"Volume Variance\", Int64.Type}, {\"Mix Variance\", Int64.Type}, {\"Price Variance\", Int64.Type}, {\"CY Purchase Value\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"PY Purchase Value\", \"PY_Purchase_Value\"}, {\"Volume Variance\", \"Volume_Variance\"}, {\"Mix Variance\", \"Mix_Variance\"}, {\"Price Variance\", \"Price_Variance\"}, {\"CY Purchase Value\", \"CY_Purchase_Value\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "UnpivotedTable",
+        "annotations": [
+          {
+            "name": "PBI_QueryRelationships",
+            "value": "{\"columnCount\":2,\"keyColumnNames\":[],\"queryRelationships\":[],\"columnIdentities\":[\"Section1/Table (2)/Replaced Value.{Attribute,0}\",\"Section1/Table (2)/Added Index.{Index,1}\"],\"ColumnCount\":2,\"KeyColumnNames\":[],\"ColumnIdentities\":[\"Section1/Table (2)/Replaced Value.{Attribute,0}\",\"Section1/Table (2)/Added Index.{Index,1}\"],\"RelationshipInfo\":[]}"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Attribute",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0595e724-96ec-47d1-b5eb-1bdef6d75b54",
+            "sortByColumn": "Index",
+            "sourceColumn": "Attribute",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Index",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "b59fe2e4-0a3d-4995-9786-f829a8e21dbb",
+            "sourceColumn": "Index",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "8161a78d-beb1-4c95-8950-6ed90d817949",
+        "measures": [
+          {
+            "name": "Measure",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    SELECTEDVALUE( 'UnpivotedTable'[Index] ),",
+              "    0, [PY Purchase Value],",
+              "    1, [Volume Variance],",
+              "    2, [Mix Variance],",
+              "    3, [Price Variance],",
+              "    4, [CY Purchase Value] ",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "9f232b5a-41bd-4d4a-a253-0d6880fb44e3"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "UnpivotedTable-17016724-b582-475d-9d16-7d29945fe27c",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table,",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(Source, {}, \"Attribute\", \"Value\"),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Unpivoted Columns\",{\"Attribute\"}),",
+                "    #\"Added Index\" = Table.AddIndexColumn(#\"Removed Other Columns\", \"Index\", 0, 1),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Added Index\",\"_\",\" \",Replacer.ReplaceText,{\"Attribute\"})",
+                "in",
+                "    #\"Replaced Value\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

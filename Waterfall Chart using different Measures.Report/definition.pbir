@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Waterfall Chart using different Measures.Dataset"
+    },
+    "byConnection": null
+  }
+}
