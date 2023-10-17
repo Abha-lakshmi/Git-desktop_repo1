@@ -171,6 +171,12 @@
             "expression": "CALCULATE(COUNT('Table'[CY_Purchase_Value]))",
             "formatString": "0",
             "lineageTag": "576ab09d-5114-4720-ad01-7c7955788466"
+          },
+          {
+            "name": "destop",
+            "expression": "CALCULATE(COUNT('Table'[Volume_Variance]))",
+            "formatString": "0",
+            "lineageTag": "bb7403dd-9f5d-46d5-a445-c684093ccb29"
           }
         ],
         "partitions": [
